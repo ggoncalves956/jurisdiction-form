@@ -22,7 +22,7 @@ def get_jurisdiction(contract_text):
 
 @app.route('/')
 def contract_form():
-    return render_template('contract_form.html')
+    return render_template('cos.path.join(os.path.dirname(__file__), 'contract_form.html')')
 
 @app.route('/jurisdiction', methods=['POST'])
 def contract_jurisdiction():
