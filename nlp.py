@@ -20,8 +20,7 @@ def get_jurisdiction(contract_text):
         return "Could not determine jurisdiction"
 
 @app.route("/")
-def index():
-    return render_template("contract_form.html")
+return render_template("contract_form.html")
 
 @app.route('/jurisdiction', methods=['POST'])
 def contract_jurisdiction():
